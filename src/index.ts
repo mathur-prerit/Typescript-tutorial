@@ -36,4 +36,11 @@ const exampleObject: ExampleObject = {
     age: 24
 }
 
-    
+//Type Assertion
+
+let exampleAny: any = 1
+// let typeAssertionExample = <number>exampleAny
+//or
+let typeAssertionExample = exampleAny as number
+
+
