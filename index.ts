@@ -1,0 +1,2 @@
+let namee: string = 'dff'
+
