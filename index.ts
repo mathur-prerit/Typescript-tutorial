@@ -1,2 +1,0 @@
-let namee: string = 'dff'
-
