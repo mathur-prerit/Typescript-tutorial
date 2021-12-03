@@ -44,3 +44,31 @@ let exampleAny: any = 1
 let typeAssertionExample = exampleAny as number
 
 
+//Functions
+function addNumber(x: number, y: number): number {
+    return x + y
+}
+
+function log(message: string | number): void {
+    console.log(message)
+}
+
+//Interfaces
+interface ExampleInterface {
+    readonly id: number, //readonly
+    name: string,
+    age?: number //FOr optional
+}
+
+const user1: ExampleInterface = {
+    id: 1,
+    name: 'hhhh'
+}
+
+interface MathFunction {
+    (x: number, y: number): number
+}
+
+const add: MathFunction = (x: number, y: number = 0): number => {
+    return x + y
+}
