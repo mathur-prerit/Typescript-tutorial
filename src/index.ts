@@ -27,8 +27,13 @@ enum directionsEnums {
 }
 
 //Objects
-const exampleObject: { name: string, age: number } = {
+type ExampleObject = {
+    name: string, age: number
+}
+
+const exampleObject: ExampleObject = {
     name: 'Prerit',
     age: 24
 }
 
+    
