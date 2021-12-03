@@ -72,3 +72,17 @@ interface MathFunction {
 const add: MathFunction = (x: number, y: number = 0): number => {
     return x + y
 }
+
+//Classes
+class Person {
+    id: number
+    name: string
+
+    constructor(id: number, name: string) {
+        this.id = id
+        this.name = name
+
+    }
+}
+
+const personClass = new Person(1, 'Hello')
