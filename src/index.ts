@@ -75,13 +75,19 @@ const add: MathFunction = (x: number, y: number = 0): number => {
 
 //Classes
 class Person {
-    id: number
-    name: string
+    user: string
+    private id: number
+    protected name: string
+    public age?: number
 
     constructor(id: number, name: string) {
         this.id = id
         this.name = name
+        this.user = 'hello'
+    }
 
+    registerUser(){
+        return `${this.name} is welcomed`
     }
 }
 
