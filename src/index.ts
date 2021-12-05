@@ -124,3 +124,14 @@ class Employee extends Person2 {
 }
 
 const emplyeeClass = new Employee(3, 'World', 'DEV')
+
+
+
+//Generics
+function getArray<T>(items: T[]): T[] {
+
+    return new Array().concat(items)
+}
+
+const numberArray = getArray<number>([1, 2, 3, 4])
+const strArray = getArray<string>(['p', 'r', 'e', 'i', 't'])
