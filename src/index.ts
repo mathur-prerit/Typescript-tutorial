@@ -107,9 +107,20 @@ class Person2 implements Person2ClassInterface {
         return `${this.name} is welcomed`
     }
 
-
 }
 
 const personClass = new Person(1, 'Hello')
 
 const person2Class = new Person2(2, 'Hello')
+
+//Class Inheritance
+class Employee extends Person2 {
+    position: string
+
+    constructor(id: number, name: string, position: string) {
+        super(id, name)
+        this.position = position
+    }
+}
+
+const emplyeeClass = new Employee(3, 'World', 'DEV')
