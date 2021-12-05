@@ -86,9 +86,30 @@ class Person {
         this.user = 'hello'
     }
 
-    registerUser(){
+}
+
+interface Person2ClassInterface {
+    id: number,
+    name: string,
+    registerUser(): string
+}
+
+class Person2 implements Person2ClassInterface {
+    id: number
+    name: string
+
+    constructor(id: number, name: string) {
+        this.id = id
+        this.name = name
+    }
+
+    registerUser() {
         return `${this.name} is welcomed`
     }
+
+
 }
 
 const personClass = new Person(1, 'Hello')
+
+const person2Class = new Person2(2, 'Hello')
